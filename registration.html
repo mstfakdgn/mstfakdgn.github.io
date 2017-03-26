@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Mustafa Akdogan">
+		<title>Registration</title>
+	</head>
+	<body>
+		<nav>
+<a href="index.html">&#91;Main&#93;</a>
+          <a href="photoGallery.html">&#91;Photo Gallery&#93;</a>
+          <a href = "myhobbies.html">&#91;My Hobbies&#93;</a>
+          <a href = "family.html">&#91;About My Family&#93;</a>
+          <a href = "hometown.html">&#91;My Hometown&#93;</a>
+          <a href="contactMe.html">&#91;Contact Me&#93;</a>
+          <a href="registration.html">&#91;Registration&#93;</a>
+          <h1>Registration Form</h1>
+		<form>
+		<fieldset>
+		<legend><strong>Personal İnformation</strong></legend>		
+		<label for="email">YOUR E-MAIL:</label>
+            <input type="email" id="email" name="email"><br>
+        <label for="password">YOUR PASSWORD:</label>
+			<input type"text" id="psw"><br> 
+		<label for="birthday">YOUR BİRTHDAY:</label>
+            <input type="date" id="birthday" name="birthday"><br>	 
+            
+		<label for="name">NAME AND SURNAME: </label>
+			<input type"text" id="name"><br>
+			<label for="city">CİTY:</label>
+            <form action="/action_page.php">
+		  	<input list="browsers">
+		  	<datalist id="browsers">
+		    	<option value="Ankara">
+		    	<option value="İstanbul">
+		    	<option value="İzmir">
+		    	<option value="Konya">
+		    	<option value="Eskişehir">
+		  	</datalist>
+		</form><br><br>
+			
+			<label for="opinion"><strong>Please give your opinion on hear:</strong><br></label>
+			<textarea id="opinion" row="6" cols="70" placeholder="You can enter your opinions here"></textarea>
+			
+		</form><br>
+		</fieldset>
+  
+    		<form method="post" enctype="multipart/form­data"
+			  	action="test.php">
+			  
+			<p><strong>Select the file you want to upload</strong></p>
+			    <input type="file" name="fileToUpload">
+			    <p><strong>Press this button to send it</strong></p>
+			    <input type="submit" form="form1" value="Upload the file" onclick="alert('File uploded')">
+		</form>
+    		<form action="main.html">
+   <label for="gender"><strong>Gender</strong></label><br> 			
+  <input type="radio" name="gender" value="male"> MALE<br>
+  <input type="radio" name="gender" value="female"> FEMALE<br>
+  
+
+</form>
+	<form action="">
+<label for="checkbox"><strong>İnterests</strong></label><br>
+<input type="checkbox" name="vehicle" value="woman">CİNEMA
+<input type="checkbox" name="vehicle" value="Car">CARS
+<input type="checkbox" name="vehicle" value="games">GAMES
+<input type="checkbox" name="vehicle" value="games">SPORT
+<input type="checkbox" name="vehicle" value="games">TV SHOWS
+</form>
+
+<form action="" method="get" id="form1">
+  
+</form>
+
+<button type="submit" form="form1" value="Submit" onclick="alert('Thanks for your registration')" ><strong>Submit</strong></button>
+	
+
+
+	</body>
+</html>
