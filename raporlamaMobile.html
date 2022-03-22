@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Raporlama Mobil", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            @*<div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                </ul>
+            </div>*@
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="jumbotron">
+    <h1>Raporlama Mobil</h1>
+    <p class="lead">Raporlama Mobil is ann application that provides information about example outages in table format alse this application includes details of reports. These reports have spesific filter options in them.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>Once you have a user to login the system you can see authorised places outages according to service.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Reports</h2>
+            <p>For now raporlama mobil has 10 reports. Each has its own functionality.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Report List</h2>
+            <p><strong>Anlik Kesintiler</strong>Outages exist currently.</p>
+            <p><strong>Dissal Güvenlik</strong>Outages that has missing documents.</p>
+            <p><strong>Kesinti Sayilari</strong>This year monthly outage counts.</p>
+            <p><strong>Saidi Saifi</strong>Calculations according to a outage formula.</p>
+            <p><strong>Haftalik Saidi Saifi</strong>Outage formula comparison between this year , previous year and before that.</p>
+            <p><strong>Yaklaşan Planlı Kesintiler</strong>Coming planned outages.</p>
+            <p><strong>Gün içinde Kapanan Kesintiler</strong>Closed outages in current day.</p>
+            <p><strong>Anlık Güç Raporu</strong>Daily station power status.</p>
+            <p><strong>Aylık Güç Raporu</strong>Monthly station power status.</p>
+        </div>
+    </div>
+
+        <hr />
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
